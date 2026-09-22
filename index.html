@@ -41,7 +41,9 @@
       <nav class="hidden md:flex gap-6 text-sm font-medium text-slate-300">
         <a href="#about" class="hover:text-brand-500 transition-colors">À propos</a>
         <a href="#cv" class="hover:text-brand-500 transition-colors">Mon CV</a>
+        <a href="#skills" class="hover:text-brand-500 transition-colors">Compétences</a>
         <a href="#projects" class="hover:text-brand-500 transition-colors">Projets & SAé</a>
+        <a href="#experience" class="hover:text-brand-500 transition-colors">Stages</a>
         <a href="#contact" class="hover:text-brand-500 transition-colors">Contact</a>
       </nav>
     </div>
@@ -62,8 +64,7 @@
       <a href="#projects" class="px-6 py-3 bg-brand-600 hover:bg-brand-700 text-white font-medium rounded-lg transition-colors shadow-lg shadow-brand-600/20">
         Voir mes SAé
       </a>
-      <!-- Bouton Télécharger le CV -->
-      <a href="CV Alternance 2026.pdf" target="_blank" download class="px-6 py-3 bg-emerald-600 hover:bg-emerald-700 text-white font-medium rounded-lg transition-colors flex items-center gap-2 shadow-lg shadow-emerald-600/20">
+      <a href="mon-cv.pdf" target="_blank" download class="px-6 py-3 bg-emerald-600 hover:bg-emerald-700 text-white font-medium rounded-lg transition-colors flex items-center gap-2 shadow-lg shadow-emerald-600/20">
         <i data-lucide="download" class="w-4 h-4"></i> Télécharger mon CV
       </a>
       <a href="#contact" class="px-6 py-3 bg-slate-800 hover:bg-slate-700 text-white font-medium rounded-lg transition-colors border border-slate-700">
@@ -73,7 +74,7 @@
   </section>
 
   <!-- Section CV / Aperçu -->
-  <section id="cv" class="py-12 px-6 max-w-6xl mx-auto w-full">
+  <section id="cv" class="py-10 px-6 max-w-6xl mx-auto w-full">
     <div class="bg-slate-800/40 border border-slate-700/60 rounded-2xl p-8 flex flex-col md:flex-row items-center justify-between gap-6">
       <div class="flex items-center gap-5">
         <div class="p-4 bg-emerald-500/10 text-emerald-400 rounded-xl border border-emerald-500/20">
@@ -87,6 +88,52 @@
       <a href="mon-cv.pdf" target="_blank" class="px-6 py-3 bg-slate-700 hover:bg-slate-600 text-white font-medium rounded-lg transition-colors flex items-center gap-2 whitespace-nowrap">
         <i data-lucide="external-link" class="w-4 h-4"></i> Ouvrir le PDF
       </a>
+    </div>
+  </section>
+
+  <!-- Section Compétences -->
+  <section id="skills" class="py-12 px-6 max-w-6xl mx-auto w-full">
+    <h2 class="text-3xl font-bold mb-8 flex items-center gap-3">
+      <i data-lucide="code-2" class="text-brand-500"></i> Compétences & Technologies
+    </h2>
+    <div class="grid md:grid-cols-3 gap-6">
+      <!-- Développement Web -->
+      <div class="bg-slate-800/50 border border-slate-700/80 rounded-xl p-6">
+        <div class="flex items-center gap-3 mb-4 text-brand-400">
+          <i data-lucide="layout" class="w-6 h-6"></i>
+          <h3 class="font-bold text-lg text-white">Développement Web</h3>
+        </div>
+        <div class="flex flex-wrap gap-2">
+          <span class="px-3 py-1 bg-slate-700 text-slate-200 text-xs font-semibold rounded-full">HTML5</span>
+          <span class="px-3 py-1 bg-slate-700 text-slate-200 text-xs font-semibold rounded-full">CSS3 / Tailwind</span>
+          <span class="px-3 py-1 bg-slate-700 text-slate-200 text-xs font-semibold rounded-full">JavaScript</span>
+          <span class="px-3 py-1 bg-slate-700 text-slate-200 text-xs font-semibold rounded-full">PHP</span>
+        </div>
+      </div>
+      <!-- Outils & Systèmes -->
+      <div class="bg-slate-800/50 border border-slate-700/80 rounded-xl p-6">
+        <div class="flex items-center gap-3 mb-4 text-emerald-400">
+          <i data-lucide="terminal" class="w-6 h-6"></i>
+          <h3 class="font-bold text-lg text-white">Outils & Systèmes</h3>
+        </div>
+        <div class="flex flex-wrap gap-2">
+          <span class="px-3 py-1 bg-slate-700 text-slate-200 text-xs font-semibold rounded-full">Git & GitHub</span>
+          <span class="px-3 py-1 bg-slate-700 text-slate-200 text-xs font-semibold rounded-full">Linux / Bash</span>
+          <span class="px-3 py-1 bg-slate-700 text-slate-200 text-xs font-semibold rounded-full">VS Code</span>
+        </div>
+      </div>
+      <!-- Bases de données & Réseaux -->
+      <div class="bg-slate-800/50 border border-slate-700/80 rounded-xl p-6">
+        <div class="flex items-center gap-3 mb-4 text-purple-400">
+          <i data-lucide="database" class="w-6 h-6"></i>
+          <h3 class="font-bold text-lg text-white">Bases de données & Réseaux</h3>
+        </div>
+        <div class="flex flex-wrap gap-2">
+          <span class="px-3 py-1 bg-slate-700 text-slate-200 text-xs font-semibold rounded-full">SQL / MySQL</span>
+          <span class="px-3 py-1 bg-slate-700 text-slate-200 text-xs font-semibold rounded-full">Réseaux TCP/IP</span>
+          <span class="px-3 py-1 bg-slate-700 text-slate-200 text-xs font-semibold rounded-full">Services Cloud</span>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -130,8 +177,80 @@
     </div>
   </section>
 
+  <!-- Section Stages & Expériences -->
+  <section id="experience" class="py-12 px-6 max-w-6xl mx-auto w-full">
+    <h2 class="text-3xl font-bold mb-8 flex items-center gap-3">
+      <i data-lucide="briefcase" class="text-brand-500"></i> Stages & Expériences
+    </h2>
+    <div class="space-y-6">
+      <div class="bg-slate-800/50 border border-slate-700 rounded-xl p-6 flex flex-col md:flex-row justify-between md:items-center gap-4">
+        <div>
+          <span class="text-xs font-semibold px-2.5 py-1 bg-amber-500/10 text-amber-400 rounded-md">Stage</span>
+          <h3 class="text-xl font-bold text-white mt-2">Intitulé du poste ou du stage</h3>
+          <p class="text-slate-400 text-sm">Nom de l'entreprise / Organisation</p>
+          <p class="text-slate-400 text-sm mt-2">Missions réalisées et compétences mobilisées durant le stage.</p>
+        </div>
+        <div class="text-sm text-slate-400 whitespace-nowrap">
+          <i data-lucide="calendar" class="w-4 h-4 inline mr-1"></i> Date / Durée
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Contact -->
+  <section id="contact" class="py-16 px-6 max-w-6xl mx-auto w-full">
+    <h2 class="text-3xl font-bold mb-8 flex items-center gap-3">
+      <i data-lucide="mail" class="text-brand-500"></i> Me Contacter
+    </h2>
+    <div class="grid md:grid-cols-2 gap-8">
+      
+      <!-- Infos de contact & Liens -->
+      <div class="space-y-6">
+        <p class="text-slate-300">
+          N'hésitez pas à me contacter pour toute demande d'information, opportunité de stage ou projet collaboratif.
+        </p>
+        <div class="space-y-4">
+          <div class="flex items-center gap-4 p-4 bg-slate-800/50 border border-slate-700 rounded-xl">
+            <div class="p-3 bg-brand-500/10 text-brand-400 rounded-lg"><i data-lucide="mail"></i></div>
+            <div>
+              <p class="text-xs text-slate-400">Email</p>
+              <a href="mailto:votre.email@exemple.com" class="text-white hover:text-brand-400 font-medium">votre.email@exemple.com</a>
+            </div>
+          </div>
+          <div class="flex items-center gap-4 p-4 bg-slate-800/50 border border-slate-700 rounded-xl">
+            <div class="p-3 bg-brand-500/10 text-brand-400 rounded-lg"><i data-lucide="linkedin"></i></div>
+            <div>
+              <p class="text-xs text-slate-400">LinkedIn</p>
+              <a href="https://linkedin.com" target="_blank" class="text-white hover:text-brand-400 font-medium">linkedin.com/in/yassine-idbouja</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Formulaire de contact -->
+      <form class="bg-slate-800/50 border border-slate-700 p-6 rounded-xl space-y-4" onsubmit="event.preventDefault(); alert('Message envoyé !');">
+        <div>
+          <label class="block text-sm font-medium text-slate-300 mb-1">Nom complet</label>
+          <input type="text" placeholder="Votre nom" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-2.5 text-white focus:outline-none focus:border-brand-500">
+        </div>
+        <div>
+          <label class="block text-sm font-medium text-slate-300 mb-1">Adresse Email</label>
+          <input type="email" placeholder="votre@email.com" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-2.5 text-white focus:outline-none focus:border-brand-500">
+        </div>
+        <div>
+          <label class="block text-sm font-medium text-slate-300 mb-1">Message</label>
+          <textarea rows="4" placeholder="Votre message..." class="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-2.5 text-white focus:outline-none focus:border-brand-500"></textarea>
+        </div>
+        <button type="submit" class="w-full bg-brand-600 hover:bg-brand-700 text-white font-medium py-3 rounded-lg transition-colors flex justify-center items-center gap-2">
+          <i data-lucide="send" class="w-4 h-4"></i> Envoyer le message
+        </button>
+      </form>
+
+    </div>
+  </section>
+
   <!-- Footer -->
-  <footer id="contact" class="border-t border-slate-800 py-8 text-center text-slate-500 text-sm">
+  <footer class="border-t border-slate-800 py-8 text-center text-slate-500 text-sm">
     <p>© 2026 Yassine Idbouja - Tous droits réservés.</p>
   </footer>
 
