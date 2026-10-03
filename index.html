@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio Étudiant | Yassine Idbouja</title>
+  <title>Portfolio | Yassine Idbouja - BUT GEII</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -35,7 +35,7 @@
   <header class="border-b border-slate-800 bg-slate-900/80 backdrop-blur sticky top-0 z-50">
     <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
       <div class="font-bold text-xl tracking-tight text-white flex items-center gap-2">
-        <span class="p-2 bg-brand-600 rounded-lg text-white"><i data-lucide="graduation-cap"></i></span>
+        <span class="p-2 bg-brand-600 rounded-lg text-white"><i data-lucide="zap"></i></span>
         <span>Yassine Idbouja</span>
       </div>
       <nav class="hidden md:flex gap-6 text-sm font-medium text-slate-300">
@@ -43,28 +43,28 @@
         <a href="#cv" class="hover:text-brand-500 transition-colors">Mon CV</a>
         <a href="#skills" class="hover:text-brand-500 transition-colors">Compétences</a>
         <a href="#projects" class="hover:text-brand-500 transition-colors">Projets & SAé</a>
-        <a href="#experience" class="hover:text-brand-500 transition-colors">Stages</a>
+        <a href="#experience" class="hover:text-brand-500 transition-colors">Expériences</a>
         <a href="#contact" class="hover:text-brand-500 transition-colors">Contact</a>
       </nav>
     </div>
   </header>
 
   <!-- Hero Section -->
-  <section id="about" class="py-20 px-6 max-w-6xl mx-auto text-center">
+  <section class="py-20 px-6 max-w-6xl mx-auto text-center">
     <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-500/10 text-brand-500 text-sm font-medium mb-6">
-      <i data-lucide="sparkles" class="w-4 h-4"></i> Portfolio Académique & Professionnel
+      <i data-lucide="graduation-cap" class="w-4 h-4"></i> Étudiant en BUT GEII — IUT Créteil-Vitry
     </div>
     <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-white mb-6">
-      Bienvenue sur mon Portfolio
+      Génie Électrique & Informatique Industrielle
     </h1>
     <p class="text-lg md:text-xl text-slate-400 max-w-2xl mx-auto mb-10">
-      Découvrez mes projets académiques (SAé), mes compétences techniques et mon parcours.
+      À la recherche d'un contrat d'alternance dès septembre 2026 dans le parcours Électricité et Maîtrise de l'Énergie.
     </p>
     <div class="flex flex-wrap justify-center gap-4">
       <a href="#projects" class="px-6 py-3 bg-brand-600 hover:bg-brand-700 text-white font-medium rounded-lg transition-colors shadow-lg shadow-brand-600/20">
-        Voir mes SAé
+        Voir mes projets
       </a>
-      <a href="mon-cv.pdf" target="_blank" download class="px-6 py-3 bg-emerald-600 hover:bg-emerald-700 text-white font-medium rounded-lg transition-colors flex items-center gap-2 shadow-lg shadow-emerald-600/20">
+      <a href="CV_Yassine_Idbouja.pdf" target="_blank" download class="px-6 py-3 bg-emerald-600 hover:bg-emerald-700 text-white font-medium rounded-lg transition-colors flex items-center gap-2 shadow-lg shadow-emerald-600/20">
         <i data-lucide="download" class="w-4 h-4"></i> Télécharger mon CV
       </a>
       <a href="#contact" class="px-6 py-3 bg-slate-800 hover:bg-slate-700 text-white font-medium rounded-lg transition-colors border border-slate-700">
@@ -73,7 +73,45 @@
     </div>
   </section>
 
-  <!-- Section CV / Aperçu -->
+  <!-- Section À Propos de Moi -->
+  <section id="about" class="py-12 px-6 max-w-6xl mx-auto w-full">
+    <h2 class="text-3xl font-bold mb-8 flex items-center gap-3">
+      <i data-lucide="user" class="text-brand-500"></i> À Propos de Moi
+    </h2>
+    <div class="bg-slate-800/50 border border-slate-700 rounded-2xl p-8 grid md:grid-cols-3 gap-8 items-center">
+      
+      <div class="md:col-span-2 space-y-4 text-slate-300 leading-relaxed">
+        <p>
+          Bonjour ! Je m'appelle <strong class="text-white font-semibold">Yassine Idbouja</strong>, étudiant en 3ᵉ année de <strong class="text-brand-400 font-semibold">BUT GEII (Génie Électrique et Informatique Industrielle)</strong> à l'IUT de Créteil-Vitry.
+        </p>
+        <p>
+          Spécialisé dans le parcours <strong class="text-brand-400 font-semibold">Électricité et maîtrise de l'énergie</strong>, mes études me permettent d'acquérir une solide expertise en électronique, électrotechnique, automatisme industriel et énergies renouvelables.
+        </p>
+        <p>
+          Sérieux, autonome et rigoureux, je maîtrise le développement en C, Python et la programmation de microcontrôleurs. Je recherche activement une <strong class="text-white font-semibold">alternance pour la rentrée 2026</strong>.
+        </p>
+      </div>
+
+      <!-- Encadré Objectif -->
+      <div class="bg-slate-900/60 border border-slate-700/80 p-6 rounded-xl space-y-4">
+        <div class="flex items-center gap-3 text-brand-400">
+          <i data-lucide="target" class="w-5 h-5"></i>
+          <h3 class="font-bold text-white">Recherche Alternance</h3>
+        </div>
+        <p class="text-xs text-slate-400 leading-normal">
+          Contrat d'alternance à partir de **septembre 2026** dans le secteur du Génie Électrique, de l'Énergie ou de l'Automatisme.
+        </p>
+        <hr class="border-slate-800">
+        <div class="flex items-center gap-2 text-xs text-emerald-400 font-medium">
+          <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+          Villeneuve Saint-Georges (94)
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Section CV / Téléchargement -->
   <section id="cv" class="py-10 px-6 max-w-6xl mx-auto w-full">
     <div class="bg-slate-800/40 border border-slate-700/60 rounded-2xl p-8 flex flex-col md:flex-row items-center justify-between gap-6">
       <div class="flex items-center gap-5">
@@ -82,10 +120,10 @@
         </div>
         <div>
           <h3 class="text-2xl font-bold text-white">Mon Curriculum Vitae</h3>
-          <p class="text-slate-400 text-sm mt-1">Consultez mon CV au format PDF pour en savoir plus sur ma formation et mes expériences.</p>
+          <p class="text-slate-400 text-sm mt-1">Consultez mon CV complet pour découvrir l'ensemble de mes compétences GEII.</p>
         </div>
       </div>
-      <a href="mon-cv.pdf" target="_blank" class="px-6 py-3 bg-slate-700 hover:bg-slate-600 text-white font-medium rounded-lg transition-colors flex items-center gap-2 whitespace-nowrap">
+      <a href="CV_Yassine_Idbouja.pdf" target="_blank" class="px-6 py-3 bg-slate-700 hover:bg-slate-600 text-white font-medium rounded-lg transition-colors flex items-center gap-2 whitespace-nowrap">
         <i data-lucide="external-link" class="w-4 h-4"></i> Ouvrir le PDF
       </a>
     </div>
@@ -94,64 +132,120 @@
   <!-- Section Compétences -->
   <section id="skills" class="py-12 px-6 max-w-6xl mx-auto w-full">
     <h2 class="text-3xl font-bold mb-8 flex items-center gap-3">
-      <i data-lucide="code-2" class="text-brand-500"></i> Compétences & Technologies
+      <i data-lucide="cpu" class="text-brand-500"></i> Compétences & Logiciels
     </h2>
     <div class="grid md:grid-cols-3 gap-6">
-      <!-- Développement Web -->
+      <!-- Langages & Informatique -->
       <div class="bg-slate-800/50 border border-slate-700/80 rounded-xl p-6">
         <div class="flex items-center gap-3 mb-4 text-brand-400">
-          <i data-lucide="layout" class="w-6 h-6"></i>
-          <h3 class="font-bold text-lg text-white">Développement Web</h3>
+          <i data-lucide="code-2" class="w-6 h-6"></i>
+          <h3 class="font-bold text-lg text-white">Programmation</h3>
         </div>
         <div class="flex flex-wrap gap-2">
-          <span class="px-3 py-1 bg-slate-700 text-slate-200 text-xs font-semibold rounded-full">HTML5</span>
-          <span class="px-3 py-1 bg-slate-700 text-slate-200 text-xs font-semibold rounded-full">CSS3 / Tailwind</span>
-          <span class="px-3 py-1 bg-slate-700 text-slate-200 text-xs font-semibold rounded-full">JavaScript</span>
-          <span class="px-3 py-1 bg-slate-700 text-slate-200 text-xs font-semibold rounded-full">PHP</span>
+          <span class="px-3 py-1 bg-slate-700 text-slate-200 text-xs font-semibold rounded-full">Langage C</span>
+          <span class="px-3 py-1 bg-slate-700 text-slate-200 text-xs font-semibold rounded-full">Python</span>
+          <span class="px-3 py-1 bg-slate-700 text-slate-200 text-xs font-semibold rounded-full">HTML</span>
+          <span class="px-3 py-1 bg-slate-700 text-slate-200 text-xs font-semibold rounded-full">VBA</span>
+          <span class="px-3 py-1 bg-slate-700 text-slate-200 text-xs font-semibold rounded-full">VHDL</span>
         </div>
       </div>
-      <!-- Outils & Systèmes -->
+      <!-- Génie Électrique & Énergie -->
+      <div class="bg-slate-800/50 border border-slate-700/80 rounded-xl p-6">
+        <div class="flex items-center gap-3 mb-4 text-amber-400">
+          <i data-lucide="zap" class="w-6 h-6"></i>
+          <h3 class="font-bold text-lg text-white">Électrique & Énergie</h3>
+        </div>
+        <div class="flex flex-wrap gap-2">
+          <span class="px-3 py-1 bg-slate-700 text-slate-200 text-xs font-semibold rounded-full">Électronique</span>
+          <span class="px-3 py-1 bg-slate-700 text-slate-200 text-xs font-semibold rounded-full">Électrotechnique</span>
+          <span class="px-3 py-1 bg-slate-700 text-slate-200 text-xs font-semibold rounded-full">Automatisme</span>
+          <span class="px-3 py-1 bg-slate-700 text-slate-200 text-xs font-semibold rounded-full">Énergies Renouvelables</span>
+        </div>
+      </div>
+      <!-- Logiciels Spécialisés -->
       <div class="bg-slate-800/50 border border-slate-700/80 rounded-xl p-6">
         <div class="flex items-center gap-3 mb-4 text-emerald-400">
-          <i data-lucide="terminal" class="w-6 h-6"></i>
-          <h3 class="font-bold text-lg text-white">Outils & Systèmes</h3>
+          <i data-lucide="wrench" class="w-6 h-6"></i>
+          <h3 class="font-bold text-lg text-white">Logiciels & CAO</h3>
         </div>
         <div class="flex flex-wrap gap-2">
-          <span class="px-3 py-1 bg-slate-700 text-slate-200 text-xs font-semibold rounded-full">Git & GitHub</span>
-          <span class="px-3 py-1 bg-slate-700 text-slate-200 text-xs font-semibold rounded-full">Linux / Bash</span>
-          <span class="px-3 py-1 bg-slate-700 text-slate-200 text-xs font-semibold rounded-full">VS Code</span>
-        </div>
-      </div>
-      <!-- Bases de données & Réseaux -->
-      <div class="bg-slate-800/50 border border-slate-700/80 rounded-xl p-6">
-        <div class="flex items-center gap-3 mb-4 text-purple-400">
-          <i data-lucide="database" class="w-6 h-6"></i>
-          <h3 class="font-bold text-lg text-white">Bases de données & Réseaux</h3>
-        </div>
-        <div class="flex flex-wrap gap-2">
-          <span class="px-3 py-1 bg-slate-700 text-slate-200 text-xs font-semibold rounded-full">SQL / MySQL</span>
-          <span class="px-3 py-1 bg-slate-700 text-slate-200 text-xs font-semibold rounded-full">Réseaux TCP/IP</span>
-          <span class="px-3 py-1 bg-slate-700 text-slate-200 text-xs font-semibold rounded-full">Services Cloud</span>
+          <span class="px-3 py-1 bg-slate-700 text-slate-200 text-xs font-semibold rounded-full">Arduino IDE</span>
+          <span class="px-3 py-1 bg-slate-700 text-slate-200 text-xs font-semibold rounded-full">Siemens Step7</span>
+          <span class="px-3 py-1 bg-slate-700 text-slate-200 text-xs font-semibold rounded-full">KiCad</span>
+          <span class="px-3 py-1 bg-slate-700 text-slate-200 text-xs font-semibold rounded-full">LTspice</span>
+          <span class="px-3 py-1 bg-slate-700 text-slate-200 text-xs font-semibold rounded-full">MPLAB X</span>
+          <span class="px-3 py-1 bg-slate-700 text-slate-200 text-xs font-semibold rounded-full">WinRelais</span>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Section Projets & SAé -->
+  <!-- Section Projets Réalisés -->
   <section id="projects" class="py-12 px-6 max-w-6xl mx-auto w-full">
     <h2 class="text-3xl font-bold mb-8 flex items-center gap-3">
-      <i data-lucide="folder-git-2" class="text-brand-500"></i> Projets & SAé
+      <i data-lucide="folder-git-2" class="text-brand-500"></i> Projets Réalisés
     </h2>
     <div class="grid md:grid-cols-2 gap-6">
-      <!-- Carte Projet 1 -->
+      
+      <!-- Robot éviteur d'obstacles -->
       <div class="bg-slate-800/50 border border-slate-700 rounded-xl p-6 hover:border-brand-500/50 transition-colors">
         <div class="flex justify-between items-start mb-4">
-          <span class="text-xs font-semibold px-2.5 py-1 bg-brand-500/10 text-brand-500 rounded-md">SAé 1.01</span>
+          <span class="text-xs font-semibold px-2.5 py-1 bg-brand-500/10 text-brand-500 rounded-md">Microcontrôleurs</span>
+          <span class="text-xs text-slate-400">Projet GEII</span>
+        </div>
+        <h3 class="text-xl font-bold text-white mb-2">Robot Éviteur d'Obstacles</h3>
+        <p class="text-slate-400 text-sm mb-4">
+          Conception et programmation d'un robot autonome équipé de capteurs de distance pour la détection et l'évitement d'obstacles en temps réel.
+        </p>
+        <div class="flex gap-2 flex-wrap">
+          <span class="text-xs bg-slate-700 text-slate-300 px-2.5 py-1 rounded">Langage C</span>
+          <span class="text-xs bg-slate-700 text-slate-300 px-2.5 py-1 rounded">Arduino</span>
+          <span class="text-xs bg-slate-700 text-slate-300 px-2.5 py-1 rounded">Capteurs US</span>
+        </div>
+      </div>
+
+      <!-- Étude d'un Panneau Photovoltaïque -->
+      <div class="bg-slate-800/50 border border-slate-700 rounded-xl p-6 hover:border-brand-500/50 transition-colors">
+        <div class="flex justify-between items-start mb-4">
+          <span class="text-xs font-semibold px-2.5 py-1 bg-emerald-500/10 text-emerald-400 rounded-md">Énergies Renouvelables</span>
+          <span class="text-xs text-slate-400">Projet GEII</span>
+        </div>
+        <h3 class="text-xl font-bold text-white mb-2">Étude d'un Panneau Photovoltaïque</h3>
+        <p class="text-slate-400 text-sm mb-4">
+          Analyse des performances électriques et du rendement d'un système photovoltaïque en fonction des conditions d'ensoleillement.
+        </p>
+        <div class="flex gap-2 flex-wrap">
+          <span class="text-xs bg-slate-700 text-slate-300 px-2.5 py-1 rounded">Électrotechnique</span>
+          <span class="text-xs bg-slate-700 text-slate-300 px-2.5 py-1 rounded">Mesure</span>
+          <span class="text-xs bg-slate-700 text-slate-300 px-2.5 py-1 rounded">LTspice</span>
+        </div>
+      </div>
+
+      <!-- Supervision Industrielle -->
+      <div class="bg-slate-800/50 border border-slate-700 rounded-xl p-6 hover:border-brand-500/50 transition-colors">
+        <div class="flex justify-between items-start mb-4">
+          <span class="text-xs font-semibold px-2.5 py-1 bg-purple-500/10 text-purple-400 rounded-md">Automatisme</span>
+          <span class="text-xs text-slate-400">Projet GEII</span>
+        </div>
+        <h3 class="text-xl font-bold text-white mb-2">Supervision Industrielle & Moteur</h3>
+        <p class="text-slate-400 text-sm mb-4">
+          Étude d'un moteur asynchrone et mise en place d'une interface de supervision industrielle pour le contrôle de procédés.
+        </p>
+        <div class="flex gap-2 flex-wrap">
+          <span class="text-xs bg-slate-700 text-slate-300 px-2.5 py-1 rounded">Siemens Step7</span>
+          <span class="text-xs bg-slate-700 text-slate-300 px-2.5 py-1 rounded">Automates</span>
+        </div>
+      </div>
+
+      <!-- Portfolio Web -->
+      <div class="bg-slate-800/50 border border-slate-700 rounded-xl p-6 hover:border-brand-500/50 transition-colors">
+        <div class="flex justify-between items-start mb-4">
+          <span class="text-xs font-semibold px-2.5 py-1 bg-sky-500/10 text-sky-400 rounded-md">Informatique Web</span>
           <span class="text-xs text-slate-400">2026</span>
         </div>
-        <h3 class="text-xl font-bold text-white mb-2">Création d'un site web portfolio</h3>
+        <h3 class="text-xl font-bold text-white mb-2">Création du Site Portfolio</h3>
         <p class="text-slate-400 text-sm mb-4">
-          Conception et déploiement d'un site web responsive hébergé sur GitHub Pages pour valoriser mes réalisations.
+          Conception et déploiement d'un site web responsive hébergé sur GitHub Pages pour mettre en valeur mes réalisations.
         </p>
         <div class="flex gap-2 flex-wrap">
           <span class="text-xs bg-slate-700 text-slate-300 px-2.5 py-1 rounded">HTML/CSS</span>
@@ -159,39 +253,30 @@
           <span class="text-xs bg-slate-700 text-slate-300 px-2.5 py-1 rounded">Git</span>
         </div>
       </div>
-      <!-- Carte Projet 2 -->
-      <div class="bg-slate-800/50 border border-slate-700 rounded-xl p-6 hover:border-brand-500/50 transition-colors">
-        <div class="flex justify-between items-start mb-4">
-          <span class="text-xs font-semibold px-2.5 py-1 bg-emerald-500/10 text-emerald-500 rounded-md">Projet Académique</span>
-          <span class="text-xs text-slate-400">En cours</span>
-        </div>
-        <h3 class="text-xl font-bold text-white mb-2">Prochain Projet à ajouter</h3>
-        <p class="text-slate-400 text-sm mb-4">
-          Description de votre future SAé ou projet personnel.
-        </p>
-        <div class="flex gap-2 flex-wrap">
-          <span class="text-xs bg-slate-700 text-slate-300 px-2.5 py-1 rounded">Compétence 1</span>
-          <span class="text-xs bg-slate-700 text-slate-300 px-2.5 py-1 rounded">Compétence 2</span>
-        </div>
-      </div>
+
     </div>
   </section>
 
-  <!-- Section Stages & Expériences -->
+  <!-- Section Expérience Professionnelle -->
   <section id="experience" class="py-12 px-6 max-w-6xl mx-auto w-full">
     <h2 class="text-3xl font-bold mb-8 flex items-center gap-3">
-      <i data-lucide="briefcase" class="text-brand-500"></i> Stages & Expériences
+      <i data-lucide="briefcase" class="text-brand-500"></i> Expérience Professionnelle
     </h2>
     <div class="space-y-6">
-      <div class="bg-slate-800/50 border border-slate-700 rounded-xl p-6 flex flex-col md:flex-row justify-between md:items-center gap-4">
+      <div class="bg-slate-800/50 border border-slate-700 rounded-xl p-6 flex flex-col md:flex-row justify-between md:items-start gap-4">
         <div>
-          <span class="text-xs font-semibold px-2.5 py-1 bg-amber-500/10 text-amber-400 rounded-md">Stage</span>
-          <h3 class="text-xl font-bold text-white mt-2">Intitulé du poste ou du stage</h3>
-          <p class="text-slate-400 text-sm">Nom de l'entreprise / Organisation</p>
-          <p class="text-slate-400 text-sm mt-2">Missions réalisées et compétences mobilisées durant le stage.</p>
+          <span class="text-xs font-semibold px-2.5 py-1 bg-amber-500/10 text-amber-400 rounded-md">Stage Pratique</span>
+          <h3 class="text-xl font-bold text-white mt-2">Technicien en réparation de smartphones</h3>
+          <p class="text-slate-300 font-medium text-sm">TelStar9</p>
+          <ul class="list-disc list-inside text-slate-400 text-sm mt-3 space-y-1">
+            <li>Diagnostic de pannes matérielles et électroniques.</li>
+            <li>Démontage/remontage, remplacement d'écrans et de batteries.</li>
+            <li>Utilisation d'outils de précision et de mesure électrique.</li>
+            <li>Application d'une démarche méthodique de maintenance corrective.</li>
+          </ul>
         </div>
         <div class="text-sm text-slate-400 whitespace-nowrap">
-          <i data-lucide="calendar" class="w-4 h-4 inline mr-1"></i> Date / Durée
+          <i data-lucide="calendar" class="w-4 h-4 inline mr-1"></i> Avril — Juin 2026
         </div>
       </div>
     </div>
@@ -204,24 +289,31 @@
     </h2>
     <div class="grid md:grid-cols-2 gap-8">
       
-      <!-- Infos de contact & Liens -->
+      <!-- Infos de contact -->
       <div class="space-y-6">
         <p class="text-slate-300">
-          N'hésitez pas à me contacter pour toute demande d'information, opportunité de stage ou projet collaboratif.
+          N'hésitez pas à me contacter pour toute opportunité d'alternance ou projet technique.
         </p>
         <div class="space-y-4">
           <div class="flex items-center gap-4 p-4 bg-slate-800/50 border border-slate-700 rounded-xl">
             <div class="p-3 bg-brand-500/10 text-brand-400 rounded-lg"><i data-lucide="mail"></i></div>
             <div>
               <p class="text-xs text-slate-400">Email</p>
-              <a href="mailto:votre.email@exemple.com" class="text-white hover:text-brand-400 font-medium">yassineidbouja2@gmail.com</a>
+              <a href="mailto:yassineidbouja2@gmail.com" class="text-white hover:text-brand-400 font-medium">yassineidbouja2@gmail.com</a>
             </div>
           </div>
           <div class="flex items-center gap-4 p-4 bg-slate-800/50 border border-slate-700 rounded-xl">
-            <div class="p-3 bg-brand-500/10 text-brand-400 rounded-lg"><i data-lucide="linkedin"></i></div>
+            <div class="p-3 bg-brand-500/10 text-brand-400 rounded-lg"><i data-lucide="phone"></i></div>
             <div>
-              <p class="text-xs text-slate-400">LinkedIn</p>
-              <a href="https://linkedin.com" target="_blank" class="text-white hover:text-brand-400 font-medium">https://www.linkedin.com/in/yassine-idbouja-a50721393/</a>
+              <p class="text-xs text-slate-400">Téléphone</p>
+              <p class="text-white font-medium">06 05 80 94 23</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-4 p-4 bg-slate-800/50 border border-slate-700 rounded-xl">
+            <div class="p-3 bg-brand-500/10 text-brand-400 rounded-lg"><i data-lucide="map-pin"></i></div>
+            <div>
+              <p class="text-xs text-slate-400">Localisation</p>
+              <p class="text-white font-medium">Villeneuve Saint-Georges (94190)</p>
             </div>
           </div>
         </div>
