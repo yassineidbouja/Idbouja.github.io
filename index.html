@@ -5,348 +5,217 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio | Yassine Idbouja - BUT GEII</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      darkMode: 'class',
-      theme: {
-        extend: {
-          colors: {
-            brand: {
-              50: '#f0f7ff',
-              100: '#e0effe',
-              500: '#3b82f6',
-              600: '#2563eb',
-              700: '#1d4ed8',
-            }
-          }
-        }
-      }
-    }
-  </script>
   <script src="https://unpkg.com/lucide@latest"></script>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
     body { font-family: 'Inter', sans-serif; }
   </style>
 </head>
 <body class="bg-slate-900 text-slate-100 min-h-screen flex flex-col justify-between">
 
-  <!-- Header / Navbar -->
+  <!-- Header -->
   <header class="border-b border-slate-800 bg-slate-900/80 backdrop-blur sticky top-0 z-50">
     <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-      <div class="font-bold text-xl tracking-tight text-white flex items-center gap-2">
-        <span class="p-2 bg-brand-600 rounded-lg text-white"><i data-lucide="zap"></i></span>
+      <div class="font-bold text-xl text-white flex items-center gap-2">
+        <span class="p-2 bg-blue-600 rounded-lg text-white"><i data-lucide="zap"></i></span>
         <span>Yassine Idbouja</span>
       </div>
       <nav class="hidden md:flex gap-6 text-sm font-medium text-slate-300">
-        <a href="#about" class="hover:text-brand-500 transition-colors">À propos</a>
-        <a href="#cv" class="hover:text-brand-500 transition-colors">Mon CV</a>
-        <a href="#skills" class="hover:text-brand-500 transition-colors">Compétences</a>
-        <a href="#projects" class="hover:text-brand-500 transition-colors">Projets & SAé</a>
-        <a href="#experience" class="hover:text-brand-500 transition-colors">Stage</a>
-        <a href="#contact" class="hover:text-brand-500 transition-colors">Contact</a>
+        <a href="#about" class="hover:text-blue-500">À propos</a>
+        <a href="#cv" class="hover:text-blue-500">Mon CV</a>
+        <a href="#skills" class="hover:text-blue-500">Compétences</a>
+        <a href="#projects" class="hover:text-blue-500">Projets</a>
+        <a href="#experience" class="hover:text-blue-500">Stage</a>
+        <a href="#contact" class="hover:text-blue-500">Contact</a>
       </nav>
     </div>
   </header>
 
   <!-- Hero Section -->
-  <section class="py-20 px-6 max-w-6xl mx-auto text-center">
-    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-500/10 text-brand-500 text-sm font-medium mb-6">
+  <section class="py-16 px-6 max-w-6xl mx-auto text-center">
+    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 text-blue-400 text-sm font-medium mb-6">
       <i data-lucide="graduation-cap" class="w-4 h-4"></i> Étudiant en BUT GEII — IUT Créteil-Vitry
     </div>
-    <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-white mb-6">
+    <h1 class="text-4xl md:text-6xl font-extrabold text-white mb-6">
       Génie Électrique & Informatique Industrielle
     </h1>
-    <p class="text-lg md:text-xl text-slate-400 max-w-2xl mx-auto mb-10">
+    <p class="text-lg text-slate-400 max-w-2xl mx-auto mb-8">
       À la recherche d'un contrat d'alternance dès septembre 2026 dans le parcours Électricité et Maîtrise de l'Énergie.
     </p>
     <div class="flex flex-wrap justify-center gap-4">
-      <a href="#projects" class="px-6 py-3 bg-brand-600 hover:bg-brand-700 text-white font-medium rounded-lg transition-colors shadow-lg shadow-brand-600/20">
-        Voir mes projets
-      </a>
-      <a href="CV_Yassine_Idbouja.pdf" target="_blank" download class="px-6 py-3 bg-emerald-600 hover:bg-emerald-700 text-white font-medium rounded-lg transition-colors flex items-center gap-2 shadow-lg shadow-emerald-600/20">
+      <a href="#projects" class="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg">Voir mes projets</a>
+      <a href="CV_Yassine_Idbouja.pdf" target="_blank" download class="px-6 py-3 bg-emerald-600 hover:bg-emerald-700 text-white font-medium rounded-lg flex items-center gap-2">
         <i data-lucide="download" class="w-4 h-4"></i> Télécharger mon CV
       </a>
-      <a href="#contact" class="px-6 py-3 bg-slate-800 hover:bg-slate-700 text-white font-medium rounded-lg transition-colors border border-slate-700">
-        Me contacter
-      </a>
+      <a href="#contact" class="px-6 py-3 bg-slate-800 hover:bg-slate-700 text-white font-medium rounded-lg border border-slate-700">Me contacter</a>
     </div>
   </section>
 
-  <!-- Section À Propos de Moi -->
-  <section id="about" class="py-12 px-6 max-w-6xl mx-auto w-full">
-    <h2 class="text-3xl font-bold mb-8 flex items-center gap-3">
-      <i data-lucide="user" class="text-brand-500"></i> À Propos de Moi
-    </h2>
-    <div class="bg-slate-800/50 border border-slate-700 rounded-2xl p-8 grid md:grid-cols-3 gap-8 items-center">
-      
-      <div class="md:col-span-2 space-y-4 text-slate-300 leading-relaxed">
-        <p>
-          Bonjour ! Je m'appelle <strong class="text-white font-semibold">Yassine Idbouja</strong>, étudiant en 3ᵉ année de <strong class="text-brand-400 font-semibold">BUT GEII (Génie Électrique et Informatique Industrielle)</strong> à l'IUT de Créteil-Vitry.
-        </p>
-        <p>
-          Spécialisé dans le parcours <strong class="text-brand-400 font-semibold">Électricité et maîtrise de l'énergie</strong>, mes études me permettent d'acquérir une solide expertise en électronique, électrotechnique, automatisme industriel et énergies renouvelables.
-        </p>
-        <p>
-          Sérieux, autonome et rigoureux, je maîtrise le développement en C, Python et la programmation de microcontrôleurs. Je recherche activement une <strong class="text-white font-semibold">alternance pour la rentrée 2026</strong>.
-        </p>
+  <!-- À Propos -->
+  <section id="about" class="py-10 px-6 max-w-6xl mx-auto w-full">
+    <h2 class="text-3xl font-bold mb-6 flex items-center gap-3"><i data-lucide="user" class="text-blue-500"></i> À Propos de Moi</h2>
+    <div class="bg-slate-800/50 border border-slate-700 rounded-2xl p-6 md:p-8 grid md:grid-cols-3 gap-6 items-center">
+      <div class="md:col-span-2 space-y-4 text-slate-300">
+        <p>Bonjour ! Je m'appelle <strong class="text-white">Yassine Idbouja</strong>, étudiant en 3ᵉ année de <strong class="text-blue-400">BUT GEII</strong> à l'IUT de Créteil-Vitry.</p>
+        <p>Spécialisé dans le parcours <strong class="text-blue-400">Électricité et maîtrise de l'énergie</strong>, mes études me permettent d'acquérir une solide expertise en électronique, électrotechnique et automatisme.</p>
+        <p>Sérieux et rigoureux, je maîtrise le C, Python et les microcontrôleurs. Je recherche activeur une <strong class="text-white">alternance pour la rentrée 2026</strong>.</p>
       </div>
-
-      <!-- Encadré Objectif -->
-      <div class="bg-slate-900/60 border border-slate-700/80 p-6 rounded-xl space-y-4">
-        <div class="flex items-center gap-3 text-brand-400">
-          <i data-lucide="target" class="w-5 h-5"></i>
-          <h3 class="font-bold text-white">Recherche Alternance</h3>
-        </div>
-        <p class="text-xs text-slate-400 leading-normal">
-          Contrat d'alternance à partir de septembre 2026 dans le secteur du Génie Électrique, de l'Énergie ou de l'Automatisme.
-        </p>
-        <hr class="border-slate-800">
-        <div class="flex items-center gap-2 text-xs text-emerald-400 font-medium">
-          <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-          Villeneuve Saint-Georges (94)
+      <div class="bg-slate-900/60 border border-slate-700 p-5 rounded-xl space-y-3">
+        <div class="flex items-center gap-2 text-blue-400 font-bold"><i data-lucide="target" class="w-5 h-5"></i> Alternance 2026</div>
+        <p class="text-xs text-slate-400">Recherche un contrat dès septembre 2026 en Génie Électrique ou Énergie.</p>
+        <div class="text-xs text-emerald-400 flex items-center gap-2 pt-2 border-t border-slate-800">
+          <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span> Villeneuve Saint-Georges (94)
         </div>
       </div>
-
     </div>
   </section>
-<!-- Section CV / Téléchargement -->
-  <section id="cv" class="py-10 px-6 max-w-6xl mx-auto w-full">
-    <div class="bg-slate-800/40 border border-slate-700/60 rounded-2xl p-8 flex flex-col md:flex-row items-center justify-between gap-6">
-      <div class="flex items-center gap-5">
-        <div class="p-4 bg-emerald-500/10 text-emerald-400 rounded-xl border border-emerald-500/20">
-          <i data-lucide="file-text" class="w-10 h-10"></i>
-        </div>
+
+  <!-- CV Box -->
+  <section id="cv" class="py-6 px-6 max-w-6xl mx-auto w-full">
+    <div class="bg-slate-800/40 border border-slate-700 rounded-2xl p-6 flex flex-col md:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-4">
+        <div class="p-3 bg-emerald-500/10 text-emerald-400 rounded-xl"><i data-lucide="file-text" class="w-8 h-8"></i></div>
         <div>
-          <h3 class="text-2xl font-bold text-white">Mon Curriculum Vitae</h3>
-          <p class="text-slate-400 text-sm mt-1">Consultez mon CV complet pour découvrir l'ensemble de mes compétences GEII.</p>
+          <h3 class="text-xl font-bold text-white">Mon Curriculum Vitae</h3>
+          <p class="text-slate-400 text-sm">Consultez mon CV complet au format PDF.</p>
         </div>
       </div>
-      <a href="CV_Yassine_Idbouja.pdf" target="_blank" class="px-6 py-3 bg-slate-700 hover:bg-slate-600 text-white font-medium rounded-lg transition-colors flex items-center gap-2 whitespace-nowrap">
+      <a href="CV_Yassine_Idbouja.pdf" target="_blank" class="px-5 py-2.5 bg-slate-700 hover:bg-slate-600 text-white font-medium rounded-lg flex items-center gap-2 text-sm">
         <i data-lucide="external-link" class="w-4 h-4"></i> Ouvrir le PDF
       </a>
     </div>
   </section>
 
-  <!-- Section Compétences -->
-  <section id="skills" class="py-12 px-6 max-w-6xl mx-auto w-full">
-    <h2 class="text-3xl font-bold mb-8 flex items-center gap-3">
-      <i data-lucide="cpu" class="text-brand-500"></i> Compétences & Logiciels
-    </h2>
+  <!-- Compétences -->
+  <section id="skills" class="py-10 px-6 max-w-6xl mx-auto w-full">
+    <h2 class="text-3xl font-bold mb-6 flex items-center gap-3"><i data-lucide="cpu" class="text-blue-500"></i> Compétences & Logiciels</h2>
     <div class="grid md:grid-cols-3 gap-6">
-      <!-- Langages & Informatique -->
-      <div class="bg-slate-800/50 border border-slate-700/80 rounded-xl p-6">
-        <div class="flex items-center gap-3 mb-4 text-brand-400">
-          <i data-lucide="code-2" class="w-6 h-6"></i>
-          <h3 class="font-bold text-lg text-white">Programmation</h3>
-        </div>
-        <div class="flex flex-wrap gap-2">
-          <span class="px-3 py-1 bg-slate-700 text-slate-200 text-xs font-semibold rounded-full">Langage C</span>
-          <span class="px-3 py-1 bg-slate-700 text-slate-200 text-xs font-semibold rounded-full">Python</span>
-          <span class="px-3 py-1 bg-slate-700 text-slate-200 text-xs font-semibold rounded-full">HTML</span>
-          <span class="px-3 py-1 bg-slate-700 text-slate-200 text-xs font-semibold rounded-full">VBA</span>
-          <span class="px-3 py-1 bg-slate-700 text-slate-200 text-xs font-semibold rounded-full">VHDL</span>
+      <div class="bg-slate-800/50 border border-slate-700 rounded-xl p-5">
+        <h3 class="font-bold text-white mb-3 flex items-center gap-2 text-blue-400"><i data-lucide="code-2" class="w-5 h-5"></i> Programmation</h3>
+        <div class="flex flex-wrap gap-2 text-xs">
+          <span class="px-2.5 py-1 bg-slate-700 rounded">Langage C</span>
+          <span class="px-2.5 py-1 bg-slate-700 rounded">Python</span>
+          <span class="px-2.5 py-1 bg-slate-700 rounded">HTML</span>
+          <span class="px-2.5 py-1 bg-slate-700 rounded">VBA</span>
+          <span class="px-2.5 py-1 bg-slate-700 rounded">VHDL</span>
         </div>
       </div>
-      <!-- Génie Électrique & Énergie -->
-      <div class="bg-slate-800/50 border border-slate-700/80 rounded-xl p-6">
-        <div class="flex items-center gap-3 mb-4 text-amber-400">
-          <i data-lucide="zap" class="w-6 h-6"></i>
-          <h3 class="font-bold text-lg text-white">Électrique & Énergie</h3>
-        </div>
-        <div class="flex flex-wrap gap-2">
-          <span class="px-3 py-1 bg-slate-700 text-slate-200 text-xs font-semibold rounded-full">Électronique</span>
-          <span class="px-3 py-1 bg-slate-700 text-slate-200 text-xs font-semibold rounded-full">Électrotechnique</span>
-          <span class="px-3 py-1 bg-slate-700 text-slate-200 text-xs font-semibold rounded-full">Automatisme</span>
-          <span class="px-3 py-1 bg-slate-700 text-slate-200 text-xs font-semibold rounded-full">Énergies Renouvelables</span>
+      <div class="bg-slate-800/50 border border-slate-700 rounded-xl p-5">
+        <h3 class="font-bold text-white mb-3 flex items-center gap-2 text-amber-400"><i data-lucide="zap" class="w-5 h-5"></i> Électrique & Énergie</h3>
+        <div class="flex flex-wrap gap-2 text-xs">
+          <span class="px-2.5 py-1 bg-slate-700 rounded">Électronique</span>
+          <span class="px-2.5 py-1 bg-slate-700 rounded">Électrotechnique</span>
+          <span class="px-2.5 py-1 bg-slate-700 rounded">Automatisme</span>
+          <span class="px-2.5 py-1 bg-slate-700 rounded">Énergies Renouvelables</span>
         </div>
       </div>
-      <!-- Logiciels Spécialisés -->
-      <div class="bg-slate-800/50 border border-slate-700/80 rounded-xl p-6">
-        <div class="flex items-center gap-3 mb-4 text-emerald-400">
-          <i data-lucide="wrench" class="w-6 h-6"></i>
-          <h3 class="font-bold text-lg text-white">Logiciels & CAO</h3>
-        </div>
-        <div class="flex flex-wrap gap-2">
-          <span class="px-3 py-1 bg-slate-700 text-slate-200 text-xs font-semibold rounded-full">Arduino IDE</span>
-          <span class="px-3 py-1 bg-slate-700 text-slate-200 text-xs font-semibold rounded-full">Siemens Step7</span>
-          <span class="px-3 py-1 bg-slate-700 text-slate-200 text-xs font-semibold rounded-full">KiCad</span>
-          <span class="px-3 py-1 bg-slate-700 text-slate-200 text-xs font-semibold rounded-full">LTspice</span>
-          <span class="px-3 py-1 bg-slate-700 text-slate-200 text-xs font-semibold rounded-full">MPLAB X</span>
-          <span class="px-3 py-1 bg-slate-700 text-slate-200 text-xs font-semibold rounded-full">WinRelais</span>
+      <div class="bg-slate-800/50 border border-slate-700 rounded-xl p-5">
+        <h3 class="font-bold text-white mb-3 flex items-center gap-2 text-emerald-400"><i data-lucide="wrench" class="w-5 h-5"></i> Logiciels & CAO</h3>
+        <div class="flex flex-wrap gap-2 text-xs">
+          <span class="px-2.5 py-1 bg-slate-700 rounded">Arduino IDE</span>
+          <span class="px-2.5 py-1 bg-slate-700 rounded">Siemens Step7</span>
+          <span class="px-2.5 py-1 bg-slate-700 rounded">KiCad</span>
+          <span class="px-2.5 py-1 bg-slate-700 rounded">LTspice</span>
+          <span class="px-2.5 py-1 bg-slate-700 rounded">MPLAB X</span>
+          <span class="px-2.5 py-1 bg-slate-700 rounded">WinRelais</span>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Section Projets Réalisés -->
-  <section id="projects" class="py-12 px-6 max-w-6xl mx-auto w-full">
-    <h2 class="text-3xl font-bold mb-8 flex items-center gap-3">
-      <i data-lucide="folder-git-2" class="text-brand-500"></i> Projets Réalisés
-    </h2>
+  <!-- Projets -->
+  <section id="projects" class="py-10 px-6 max-w-6xl mx-auto w-full">
+    <h2 class="text-3xl font-bold mb-6 flex items-center gap-3"><i data-lucide="folder-git-2" class="text-blue-500"></i> Projets Réalisés</h2>
     <div class="grid md:grid-cols-2 gap-6">
-      
-      <!-- Robot éviteur d'obstacles -->
-      <div class="bg-slate-800/50 border border-slate-700 rounded-xl p-6 hover:border-brand-500/50 transition-colors">
-        <div class="flex justify-between items-start mb-4">
-          <span class="text-xs font-semibold px-2.5 py-1 bg-brand-500/10 text-brand-500 rounded-md">Microcontrôleurs</span>
-          <span class="text-xs text-slate-400">Projet GEII</span>
-        </div>
-        <h3 class="text-xl font-bold text-white mb-2">Robot Éviteur d'Obstacles</h3>
-        <p class="text-slate-400 text-sm mb-4">
-          Conception et programmation d'un robot autonome équipé de capteurs de distance pour la détection et l'évitement d'obstacles en temps réel.
-        </p>
-        <div class="flex gap-2 flex-wrap">
-          <span class="text-xs bg-slate-700 text-slate-300 px-2.5 py-1 rounded">Langage C</span>
-          <span class="text-xs bg-slate-700 text-slate-300 px-2.5 py-1 rounded">Arduino</span>
-          <span class="text-xs bg-slate-700 text-slate-300 px-2.5 py-1 rounded">Capteurs US</span>
-        </div>
+      <div class="bg-slate-800/50 border border-slate-700 rounded-xl p-5">
+        <span class="text-xs font-semibold px-2 py-0.5 bg-blue-500/10 text-blue-400 rounded">Microcontrôleurs</span>
+        <h3 class="text-lg font-bold text-white mt-2 mb-1">Robot Éviteur d'Obstacles</h3>
+        <p class="text-slate-400 text-sm mb-3">Conception d'un robot autonome avec capteurs de distance pour l'évitement d'obstacles en temps réel.</p>
+        <div class="flex gap-2 text-xs"><span class="bg-slate-700 px-2 py-0.5 rounded">C</span><span class="bg-slate-700 px-2 py-0.5 rounded">Arduino</span></div>
       </div>
-
-      <!-- Étude d'un Panneau Photovoltaïque -->
-      <div class="bg-slate-800/50 border border-slate-700 rounded-xl p-6 hover:border-brand-500/50 transition-colors">
-        <div class="flex justify-between items-start mb-4">
-          <span class="text-xs font-semibold px-2.5 py-1 bg-emerald-500/10 text-emerald-400 rounded-md">Énergies Renouvelables</span>
-          <span class="text-xs text-slate-400">Projet GEII</span>
-        </div>
-        <h3 class="text-xl font-bold text-white mb-2">Étude d'un Panneau Photovoltaïque</h3>
-        <p class="text-slate-400 text-sm mb-4">
-          Analyse des performances électriques et du rendement d'un système photovoltaïque en fonction des conditions d'ensoleillement.
-        </p>
-        <div class="flex gap-2 flex-wrap">
-          <span class="text-xs bg-slate-700 text-slate-300 px-2.5 py-1 rounded">Électrotechnique</span>
-          <span class="text-xs bg-slate-700 text-slate-300 px-2.5 py-1 rounded">Mesure</span>
-          <span class="text-xs bg-slate-700 text-slate-300 px-2.5 py-1 rounded">LTspice</span>
-        </div>
+      <div class="bg-slate-800/50 border border-slate-700 rounded-xl p-5">
+        <span class="text-xs font-semibold px-2 py-0.5 bg-emerald-500/10 text-emerald-400 rounded">Énergies Renouvelables</span>
+        <h3 class="text-lg font-bold text-white mt-2 mb-1">Étude d'un Panneau Photovoltaïque</h3>
+        <p class="text-slate-400 text-sm mb-3">Analyse des performances électriques et du rendement d'un système photovoltaïque.</p>
+        <div class="flex gap-2 text-xs"><span class="bg-slate-700 px-2 py-0.5 rounded">Électrotechnique</span><span class="bg-slate-700 px-2 py-0.5 rounded">LTspice</span></div>
       </div>
-
-      <!-- Supervision Industrielle -->
-      <div class="bg-slate-800/50 border border-slate-700 rounded-xl p-6 hover:border-brand-500/50 transition-colors">
-        <div class="flex justify-between items-start mb-4">
-          <span class="text-xs font-semibold px-2.5 py-1 bg-purple-500/10 text-purple-400 rounded-md">Automatisme</span>
-          <span class="text-xs text-slate-400">Projet GEII</span>
-        </div>
-        <h3 class="text-xl font-bold text-white mb-2">Supervision Industrielle & Moteur</h3>
-        <p class="text-slate-400 text-sm mb-4">
-          Étude d'un moteur asynchrone et mise en place d'une interface de supervision industrielle pour le contrôle de procédés.
-        </p>
-        <div class="flex gap-2 flex-wrap">
-          <span class="text-xs bg-slate-700 text-slate-300 px-2.5 py-1 rounded">Siemens Step7</span>
-          <span class="text-xs bg-slate-700 text-slate-300 px-2.5 py-1 rounded">Automates</span>
-        </div>
+      <div class="bg-slate-800/50 border border-slate-700 rounded-xl p-5">
+        <span class="text-xs font-semibold px-2 py-0.5 bg-purple-500/10 text-purple-400 rounded">Automatisme</span>
+        <h3 class="text-lg font-bold text-white mt-2 mb-1">Supervision Industrielle & Moteur</h3>
+        <p class="text-slate-400 text-sm mb-3">Étude d'un moteur asynchrone et mise en place d'une interface de supervision industrielle.</p>
+        <div class="flex gap-2 text-xs"><span class="bg-slate-700 px-2 py-0.5 rounded">Siemens Step7</span></div>
       </div>
-
-      <!-- Portfolio Web -->
-      <div class="bg-slate-800/50 border border-slate-700 rounded-xl p-6 hover:border-brand-500/50 transition-colors">
-        <div class="flex justify-between items-start mb-4">
-          <span class="text-xs font-semibold px-2.5 py-1 bg-sky-500/10 text-sky-400 rounded-md">Informatique Web</span>
-          <span class="text-xs text-slate-400">2026</span>
-        </div>
-        <h3 class="text-xl font-bold text-white mb-2">Création du Site Portfolio</h3>
-        <p class="text-slate-400 text-sm mb-4">
-          Conception et déploiement d'un site web responsive hébergé sur GitHub Pages pour mettre en valeur mes réalisations.
-        </p>
-        <div class="flex gap-2 flex-wrap">
-          <span class="text-xs bg-slate-700 text-slate-300 px-2.5 py-1 rounded">HTML</span>
-          <span class="text-xs bg-slate-700 text-slate-300 px-2.5 py-1 rounded">Tailwind CSS</span>
-          <span class="text-xs bg-slate-700 text-slate-300 px-2.5 py-1 rounded">Git</span>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- Section Expérience / Stage TelStar9 -->
-  <section id="experience" class="py-12 px-6 max-w-6xl mx-auto w-full">
-    <h2 class="text-3xl font-bold mb-8 flex items-center gap-3">
-      <i data-lucide="briefcase" class="text-brand-500"></i> Expérience Professionnelle (Stage)
-    </h2>
-    <div class="space-y-6">
-      <div class="bg-slate-800/50 border border-slate-700 rounded-xl p-6 flex flex-col md:flex-row justify-between md:items-start gap-4">
-        <div>
-          <span class="text-xs font-semibold px-2.5 py-1 bg-amber-500/10 text-amber-400 rounded-md">Stage BUT2 GEII</span>
-          <h3 class="text-xl font-bold text-white mt-2">Technicien en réparation de smartphones</h3>
-          <p class="text-slate-300 font-medium text-sm">TelStar9 (Villeneuve-Saint-Georges) — Tuteur : M. Zafari</p>
-          <ul class="list-disc list-inside text-slate-400 text-sm mt-3 space-y-1">
-            <li><strong>Diagnostic & Maintenance Corrective :</strong> Identification des pannes matérielles (écrans cassés, batteries usées, connecteurs de charge défectueux).</li>
-            <li><strong>Interventions techniques :</strong> Démontage/remontage d'appareils (ex: iPhone XR), déconnexion de la sécurité batterie, remplacement des composants internes.</li>
-            <li><strong>Tests de bon fonctionnement :</strong> Vérification de l'affichage, du tactile, des caméras, du haut-parleur et de la recharge avant restitution au client.</li>
-            <li><strong>Compétences professionnelles :</strong> Rigueur, gestion du stress lors des premières interventions et relation client.</li>
-          </ul>
-        </div>
-        <div class="text-sm text-slate-400 whitespace-nowrap">
-          <i data-lucide="calendar" class="w-4 h-4 inline mr-1"></i> Avril — Juin 2026
-        </div>
+      <div class="bg-slate-800/50 border border-slate-700 rounded-xl p-5">
+        <span class="text-xs font-semibold px-2 py-0.5 bg-sky-500/10 text-sky-400 rounded">Web</span>
+        <h3 class="text-lg font-bold text-white mt-2 mb-1">Création du Site Portfolio</h3>
+        <p class="text-slate-400 text-sm mb-3">Conception et déploiement d'un site web responsive hébergé sur GitHub Pages.</p>
+        <div class="flex gap-2 text-xs"><span class="bg-slate-700 px-2 py-0.5 rounded">HTML/CSS</span><span class="bg-slate-700 px-2 py-0.5 rounded">Tailwind</span></div>
       </div>
     </div>
   </section>
 
-  <!-- Section Contact -->
-  <section id="contact" class="py-16 px-6 max-w-6xl mx-auto w-full">
-    <h2 class="text-3xl font-bold mb-8 flex items-center gap-3">
-      <i data-lucide="mail" class="text-brand-500"></i> Me Contacter
-    </h2>
-    <div class="grid md:grid-cols-2 gap-8">
-      
-      <!-- Infos de contact -->
-      <div class="space-y-6">
-        <p class="text-slate-300">
-          N'hésitez pas à me contacter pour toute opportunité d'alternance ou projet technique.
-        </p>
-        <div class="space-y-4">
-          <div class="flex items-center gap-4 p-4 bg-slate-800/50 border border-slate-700 rounded-xl">
-            <div class="p-3 bg-brand-500/10 text-brand-400 rounded-lg"><i data-lucide="mail"></i></div>
-            <div>
-              <p class="text-xs text-slate-400">Email</p>
-              <a href="mailto:yassineidbouja2@gmail.com" class="text-white hover:text-brand-400 font-medium">yassineidbouja2@gmail.com</a>
-            </div>
-          </div>
-          <div class="flex items-center gap-4 p-4 bg-slate-800/50 border border-slate-700 rounded-xl">
-            <div class="p-3 bg-brand-500/10 text-brand-400 rounded-lg"><i data-lucide="phone"></i></div>
-            <div>
-              <p class="text-xs text-slate-400">Téléphone</p>
-              <p class="text-white font-medium">06 05 80 94 23</p>
-            </div>
-          </div>
-          <div class="flex items-center gap-4 p-4 bg-slate-800/50 border border-slate-700 rounded-xl">
-            <div class="p-3 bg-brand-500/10 text-brand-400 rounded-lg"><i data-lucide="map-pin"></i></div>
-            <div>
-              <p class="text-xs text-slate-400">Localisation</p>
-              <p class="text-white font-medium">Villeneuve Saint-Georges (94190)</p>
-            </div>
-          </div>
+  <!-- Stage -->
+  <section id="experience" class="py-10 px-6 max-w-6xl mx-auto w-full">
+    <h2 class="text-3xl font-bold mb-6 flex items-center gap-3"><i data-lucide="briefcase" class="text-blue-500"></i> Expérience Professionnelle (Stage)</h2>
+    <div class="bg-slate-800/50 border border-slate-700 rounded-xl p-6 flex flex-col md:flex-row justify-between gap-4">
+      <div>
+        <span class="text-xs font-semibold px-2 py-0.5 bg-amber-500/10 text-amber-400 rounded">Stage BUT2 GEII</span>
+        <h3 class="text-xl font-bold text-white mt-2">Technicien en réparation de smartphones</h3>
+        <p class="text-slate-300 text-sm font-medium">TelStar9 (Villeneuve-Saint-Georges) — Tuteur : M. Zafari</p>
+        <ul class="list-disc list-inside text-slate-400 text-sm mt-3 space-y-1">
+          <li>Diagnostic et maintenance corrective (écrans, batteries, connecteurs).</li>
+          <li>Démontage/remontage (ex: iPhone XR) et remplacement des composants internes.</li>
+          <li>Tests de bon fonctionnement (tactile, affichage, charge).</li>
+        </ul>
+      </div>
+      <div class="text-sm text-slate-400 whitespace-nowrap"><i data-lucide="calendar" class="w-4 h-4 inline mr-1"></i> Avril — Juin 2026</div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-12 px-6 max-w-6xl mx-auto w-full">
+    <h2 class="text-3xl font-bold mb-6 flex items-center gap-3"><i data-lucide="mail" class="text-blue-500"></i> Me Contacter</h2>
+    <div class="grid md:grid-cols-2 gap-6">
+      <div class="space-y-4">
+        <p class="text-slate-300 text-sm">N'hésitez pas à me contacter pour toute opportunité d'alternance ou projet.</p>
+        <div class="flex items-center gap-3 p-3 bg-slate-800/50 border border-slate-700 rounded-xl">
+          <i data-lucide="mail" class="text-blue-400 w-5 h-5"></i>
+          <div><p class="text-xs text-slate-400">Email</p><a href="mailto:yassineidbouja2@gmail.com" class="text-white text-sm font-medium">yassineidbouja2@gmail.com</a></div>
+        </div>
+        <div class="flex items-center gap-3 p-3 bg-slate-800/50 border border-slate-700 rounded-xl">
+          <i data-lucide="phone" class="text-blue-400 w-5 h-5"></i>
+          <div><p class="text-xs text-slate-400">Téléphone</p><p class="text-white text-sm font-medium">06 05 80 94 23</p></div>
+        </div>
+        <div class="flex items-center gap-3 p-3 bg-slate-800/50 border border-slate-700 rounded-xl">
+          <i data-lucide="map-pin" class="text-blue-400 w-5 h-5"></i>
+          <div><p class="text-xs text-slate-400">Localisation</p><p class="text-white text-sm font-medium">Villeneuve Saint-Georges (94190)</p></div>
         </div>
       </div>
-
-      <!-- Formulaire de contact -->
-      <form class="bg-slate-800/50 border border-slate-700 p-6 rounded-xl space-y-4" onsubmit="event.preventDefault(); alert('Message envoyé !');">
+      <form class="bg-slate-800/50 border border-slate-700 p-5 rounded-xl space-y-3" onsubmit="event.preventDefault(); alert('Message envoyé !');">
         <div>
-          <label class="block text-sm font-medium text-slate-300 mb-1">Nom complet</label>
-          <input type="text" placeholder="Votre nom" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-2.5 text-white focus:outline-none focus:border-brand-500">
+          <label class="block text-xs font-medium text-slate-300 mb-1">Nom complet</label>
+          <input type="text" placeholder="Votre nom" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 text-white text-sm focus:border-blue-500">
         </div>
         <div>
-          <label class="block text-sm font-medium text-slate-300 mb-1">Adresse Email</label>
-          <input type="email" placeholder="votre@email.com" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-2.5 text-white focus:outline-none focus:border-brand-500">
+          <label class="block text-xs font-medium text-slate-300 mb-1">Email</label>
+          <input type="email" placeholder="votre@email.com" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 text-white text-sm focus:border-blue-500">
         </div>
         <div>
-          <label class="block text-sm font-medium text-slate-300 mb-1">Message</label>
-          <textarea rows="4" placeholder="Votre message..." class="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-2.5 text-white focus:outline-none focus:border-brand-500"></textarea>
+          <label class="block text-xs font-medium text-slate-300 mb-1">Message</label>
+          <textarea rows="3" placeholder="Votre message..." class="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 text-white text-sm focus:border-blue-500"></textarea>
         </div>
-        <button type="submit" class="w-full bg-brand-600 hover:bg-brand-700 text-white font-medium py-3 rounded-lg transition-colors flex justify-center items-center gap-2">
-          <i data-lucide="send" class="w-4 h-4"></i> Envoyer le message
+        <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-2.5 rounded-lg text-sm flex justify-center items-center gap-2">
+          <i data-lucide="send" class="w-4 h-4"></i> Envoyer
         </button>
       </form>
-
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="border-t border-slate-800 py-8 text-center text-slate-500 text-sm">
+  <footer class="border-t border-slate-800 py-6 text-center text-slate-500 text-xs">
     <p>© 2026 Yassine Idbouja - Tous droits réservés.</p>
   </footer>
 
-  <script>
-    lucide.createIcons();
-  </script>
+  <script>lucide.createIcons();</script>
 </body>
 </html>
